@@ -8,27 +8,27 @@ import Stat from "./Stat";
 const AboutUs = () => {
   return (
     <div style={{ backgroundImage: `url(${background})` }}>
-      <div class="hero">
-        <div class="hero-content flex-col lg:flex-row">
+      <div className="hero">
+        <div className="hero-content flex-col lg:flex-row">
           <img
             src={dash}
             alt="PhoneImage"
-            class="max-w-sm rounded-lg shadow-2xl"
+            className="max-w-sm rounded-lg shadow-2xl"
           />
           <div>
-            <h1 class="font-bold">About Us</h1>
-            <h1 class="text-5xl font-bold">
+            <h1 className="font-bold">About Us</h1>
+            <h1 className="text-5xl font-bold">
               A dedicated solution for startups and enterprises
             </h1>
-            <p class="py-6">
+            <p className="py-6">
               Sed ut perspiciatis unde omnis iste natus error sit voluptatem
               accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
               quae ab illo inventore veritatis et quasi architecto beatae vitae
               dicta sunt explicabo.
             </p>
             <div className="flex gap-4">
-                  <div class="avatar">
-                    <div class="w-24 rounded-full">
+                  <div className="avatar">
+                    <div className="w-24 rounded-full">
                       <img
                         alt="user"
                         src={user}
@@ -36,7 +36,7 @@ const AboutUs = () => {
                     </div>
                   </div>
                   <div>
-                    <p class="py-6">
+                    <p className="py-6">
                       "Fieldx is for teams that care about their product
                       growth."
                     </p>

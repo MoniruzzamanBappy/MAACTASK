@@ -3,15 +3,15 @@ import fullDash from "../../Media/fullDash.png";
 const TopSection = () => {
   return (
     <>
-      <div class="hero demo-wrap pt-20">
-        <div class="hero-content text-center">
-          <div class="max-w-md">
-            <h1 class="text-3xl font-bold">
+      <div className="hero demo-wrap pt-20">
+        <div className="hero-content text-center">
+          <div className="max-w-md">
+            <h1 className="text-3xl font-bold">
               Analytics that transform your product inside-out
             </h1>
 
-            <button class="btn m-4 btn-primary">Request for Demo</button>
-            <button class="btn m-4 btn-outline btn-primary">Download</button>
+            <button className="btn m-4 btn-primary">Request for Demo</button>
+            <button className="btn m-4 btn-outline btn-primary">Download</button>
           </div>
         </div>
       </div>
