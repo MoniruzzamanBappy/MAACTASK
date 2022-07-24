@@ -4,6 +4,7 @@ import logo from "../../Media/logo.png";
 import "./Header.css";
 
 const Header = () => {
+  const token = localStorage.getItem("accessToken");
   const links = (
     <>
       <li>
@@ -11,20 +12,28 @@ const Header = () => {
           Home
         </Link>
       </li>
-      <li>
-        <Link className="btn btn-ghost" to="/login">
-          Login
-        </Link>
-      </li>
-      <li>
-        <Link className="btn btn-ghost" to="/signup">
-          Registration
-        </Link>
-      </li>
+      {token ? (
+        <li>
+          <Link to={"/dashboard"}>Dashboard</Link>
+        </li>
+      ) : (
+        <>
+          <li>
+            <Link className="btn btn-ghost" to="/login">
+              Login
+            </Link>
+          </li>
+          <li>
+            <Link className="btn btn-ghost" to="/signup">
+              Registration
+            </Link>
+          </li>
+        </>
+      )}
     </>
   );
   return (
-    <div >
+    <div>
       <div className="navbar  border-b-2">
         <div className="navbar-start">
           <div className="dropdown">

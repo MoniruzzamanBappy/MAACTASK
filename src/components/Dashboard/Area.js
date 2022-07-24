@@ -7,7 +7,7 @@ const Area = () => {
     const [area, setArea] = useState([]);
     async function fetchData() {
       const response = await fetch(
-        "",
+        "https://staging-api.erpxbd.com/api/v1/area/All/200/1",
         {
           method: "GET",
           headers: {
