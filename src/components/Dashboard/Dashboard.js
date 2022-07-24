@@ -2,12 +2,18 @@ import React from "react";
 import { Link, Outlet } from "react-router-dom";
 import { GrLocation } from "react-icons/gr";
 import logo from "../../Media/logo.png";
+import { useNavigate } from "react-router-dom";
 
 const Dashboard = () => {
+    const navigate = useNavigate();
+    const hadleNavigate = ()=>{
+        navigate("/home")
+
+    }
   return (
     <>
       <div class="navbar bg-slate-200 ">
-        <img src={logo} alt="company logo" />
+        <img className="cursor-pointer" onClick={hadleNavigate} src={logo} alt="company logo" />
         <label
           for="my-drawer-2"
           class="navbar-end drawer-button cursor-pointer lg:hidden"
