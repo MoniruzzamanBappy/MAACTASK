@@ -60,7 +60,7 @@ const AreaCreate = () => {
                 name="region"
               >
                 {
-                    region?.map((item) => (<option key={item._id} value={item.name}>`${item.name}`</option>))
+                    region?.map((item) => (<option key={item._id} value={item._id}>`${item.name}`</option>))
                 }
               </select>
             </div>
